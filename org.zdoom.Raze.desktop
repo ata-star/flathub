@@ -1,0 +1,9 @@
+[Desktop Entry]
+Comment=Multi-game launcher for Doom era games
+Categories=Game;Shooter;
+Exec=raze.sh
+Name=GZDoom
+StartupNotify=true
+PrefersNonDefaultGPU=true
+Terminal=false
+Type=Application

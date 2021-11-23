@@ -1,0 +1,37 @@
+{
+    "name": "raze",
+    "buildsystem": "cmake-ninja",
+    "config-opts": [
+        "-DCMAKE_BUILD_TYPE=RelWithDebInfo"
+    ],
+    "cleanup": [
+        "/lib/*.a",
+        "/lib/*.la",
+        "/lib/pkgconfig",
+        "/include"
+    ],
+    "sources": [
+        {
+            "type": "git",
+            "url": "https://github.com/coelckers/Raze.git",
+            "tag": "1.2.1",
+            "commit": "f70fc3e715621e2a4146f8501d3710e4ca008ddd"
+        }
+    ],
+    "modules": [
+        {
+            "name": "zmusic",
+            "buildsystem": "cmake-ninja",
+            "config-opts": [
+                "-DCMAKE_BUILD_TYPE=RelWithDebInfo"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://github.com/coelckers/ZMusic/archive/1.1.8.tar.gz",
+                    "sha256": "73082f661b7b0bb33348d1d186c132deec9132a1613480348a00172b49c9fd68"
+                }
+            ]
+        }
+    ]
+}
